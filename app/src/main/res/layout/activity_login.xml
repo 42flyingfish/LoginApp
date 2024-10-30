@@ -12,16 +12,31 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
-        <TextView
+        <EditText
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="What is this nonsense"
+            android:hint="Enter ID"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
             />
         <Button
-            android:id="@+id/button_id"
-            android:layout_width="wrap_content"
+            android:id="@+id/register"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Go to the next thing"
+            android:text="Register User"
+            />
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
             />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
